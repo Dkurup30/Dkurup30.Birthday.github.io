@@ -15,12 +15,12 @@ surpriseButton.addEventListener('click', function() {
     if (surpriseVisible) {
         surpriseDiv.classList.remove('hidden');
         birthdayMessage.classList.add('hidden');
-        surpriseButton.classList.add('hidden');
+        surpriseButton.textContent = 'Hide Surprise';
         giftLink.classList.remove('hidden'); // Show the gift button
     } else {
         surpriseDiv.classList.add('hidden');
         birthdayMessage.classList.remove('hidden');
-        surpriseButton.classList.remove('hidden');
+        surpriseButton.textContent = '🎁 Get My Surprise';
         giftLink.classList.add('hidden'); // Hide the gift button
         resetCandles();
     }
@@ -42,4 +42,3 @@ function resetCandles() {
     wishText.textContent = 'Make a wish and blow out the candles!';
     blowCandlesButton.textContent = 'Blow Candles';
 }
-

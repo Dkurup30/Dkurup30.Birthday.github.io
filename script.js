@@ -42,3 +42,4 @@ function resetCandles() {
     wishText.textContent = 'Make a wish and blow out the candles!';
     blowCandlesButton.textContent = 'Blow Candles';
 }
+

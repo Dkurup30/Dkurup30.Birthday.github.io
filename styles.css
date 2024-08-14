@@ -15,8 +15,7 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.button {
-    display: inline-block;
+button {
     background-color: #ff8c8c;
     color: white;
     border: none;
@@ -24,24 +23,10 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    text-decoration: none;
 }
 
-.button:hover {
+button:hover {
     background-color: #ff6b6b;
-}
-
-#reveal-surprise {
-    display: none;
-}
-
-#surprise {
-    display: none;
-    margin-top: 20px;
-}
-
-#reveal-surprise:checked ~ #surprise {
-    display: block;
 }
 
 .cake {
@@ -69,10 +54,10 @@ body {
 .candle:nth-child(4) { left: 140px; }
 .candle:nth-child(5) { left: 180px; }
 
-#reveal-surprise:checked ~ #surprise .candle {
-    background-color: transparent;
-}
-
-#reveal-surprise:checked ~ #surprise #wish {
-    display: none;
+.candle::after {
+    content: '🔥';
+    position: absolute;
+    top: -15px;
+    left: -2px;
+    font-size: 18px;
 }

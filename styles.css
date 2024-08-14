@@ -69,3 +69,11 @@ button:hover {
 .blown-out .candle::after {
     content: '';
 }
+
+#gift-button {
+    background-color: #8cfc8c;
+}
+
+#gift-button:hover {
+    background-color: #6bff6b;
+}

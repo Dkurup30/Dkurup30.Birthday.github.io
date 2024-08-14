@@ -1,12 +1,11 @@
-function showSurprise() {
-    document.getElementById('surprise').style.display = 'block';
-    document.getElementById('birthday-message').style.display = 'none';
-}
+document.getElementById('surprise-button').addEventListener('click', function() {
+    document.getElementById('surprise').classList.remove('hidden');
+    document.getElementById('birthday-message').classList.add('hidden');
+    this.classList.add('hidden');
+});
 
-function blowCandles() {
-    let candles = document.querySelectorAll('.candle::after');
-    candles.forEach(function(candle) {
-        candle.innerHTML = '';
-    });
-    document.getElementById('wish').innerHTML = '🎉 Your wish is coming true! 🎉';
-}
+document.getElementById('blow-candles-button').addEventListener('click', function() {
+    document.querySelector('.cake').classList.add('blown-out');
+    document.getElementById('wish').textContent = '🎉 Your wish is coming true! 🎉';
+    this.classList.add('hidden');
+});

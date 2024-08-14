@@ -29,6 +29,10 @@ button:hover {
     background-color: #ff6b6b;
 }
 
+.hidden {
+    display: none;
+}
+
 .cake {
     margin-top: 20px;
     position: relative;
@@ -60,4 +64,8 @@ button:hover {
     top: -15px;
     left: -2px;
     font-size: 18px;
+}
+
+.blown-out .candle::after {
+    content: '';
 }

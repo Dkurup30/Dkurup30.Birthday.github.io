@@ -8,13 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>🎉 Happy Birthday Apaaaaa! 🎉</h1>
+        <h1>🎉 Happy Birthday! 🎉</h1>
         <p id="birthday-message">Click the button to get your surprise!</p>
-        <button onclick="showSurprise()">🎁 Get My Surprise</button>
+        <button id="surprise-button">🎁 Get My Surprise</button>
 
-        <div id="surprise" style="display:none;">
+        <div id="surprise" class="hidden">
             <h2>🎂 Here's your Birthday Cake! 🎂</h2>
-            <br>
             <div class="cake">
                 <div class="candle"></div>
                 <div class="candle"></div>
@@ -23,8 +22,7 @@
                 <div class="candle"></div>
             </div>
             <p id="wish">Make a wish and blow out the candles!</p>
-            <button onclick="blowCandles()">Blow Candles</button>
-            <a href="Round 1.html" target="_blank"><button>Click here to get your gift now!</button></a>
+            <button id="blow-candles-button">Blow Candles</button>
         </div>
     </div>
 
